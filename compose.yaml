@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ictroom:
+    image: nginx:latest
+    container_name: ictroom
+    ports:
+      - "80:80"
+    volumes:
+      - ./ictroom:/usr/share/nginx/html
